@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Aerospace Journey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0c10;
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            background: #16213e;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h2 {
+            color: #ffcc29;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1a1a2e;
+            color: white;
+            margin-top: 20px;
+        }
+        .planet {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: -150px;
+            animation: float 5s ease-out forwards;
+        }
+        .planet1 { left: 10%; animation-delay: 0s; }
+        .planet2 { left: 50%; animation-delay: 0.5s; }
+        .planet3 { left: 80%; animation-delay: 1s; }
+        
+        @keyframes float {
+            0% { transform: translateY(0) scale(0.5); opacity: 0; }
+            100% { transform: translateY(150px) scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="planet1.png" class="planet planet1">
+    <img src="planet2.png" class="planet planet2">
+    <img src="planet3.png" class="planet planet3">
+    
+    <header>My Aerospace Journey</header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm an 11th-grade student at Jamnabai Narsee School, passionate about aerospace engineering, astrophysics, and space exploration.</p>
+            <p>I am currently conducting research on **Sustainable Aviation Fuels (SAF)** and working on a research paper in this field. My interests include propulsion systems, orbital mechanics, and next-generation space travel technologies.</p>
+            <p>Beyond research, I have completed **internships at the Nehru Science Centre and Nehru Planetarium**, gaining hands-on exposure to real-world scientific projects.</p>
+            <p>I also run an **astrophysics blog**, where I explore topics related to space technology, deep space exploration, and innovative propulsion systems. Check out my work here:</p>
+            <ul>
+                <li><a href="#">Astrophysics Blog</a></li>
+                <li><a href="#">Research Paper on SAF</a></li>
+                <li><a href="#">Space Propulsion Concepts</a></li>
+            </ul>
+        </section>
+        <section id="research">
+            <h2>Research & Projects</h2>
+            <p>Currently researching Sustainable Aviation Fuels (SAF) and working on a research paper in this field.</p>
+            <p>Interned at Nehru Science Centre & Nehru Planetarium, gaining hands-on experience in aerospace technologies.</p>
+        </section>
+        <section id="blog">
+            <h2>My Astrophysics Blog</h2>
+            <p>Exploring space science concepts, propulsion systems, and cutting-edge aerospace innovations. <a href="#">Read More</a></p>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>© 2025 My Aerospace Journey</footer>
+</body>
+</html>
